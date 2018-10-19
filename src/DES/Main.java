@@ -1,3 +1,5 @@
+package DES;
+
 import java.util.Scanner;
 
 public class Main {
@@ -14,11 +16,11 @@ public class Main {
             String k = "7qw8sd4h";
             System.out.println("Text: " + myText);
             byte[] enc = DES.encrypt(myText.getBytes(),k.getBytes());
-            System.out.println("Text cryptet DES: " + new String(enc));
+            System.out.println("Text cryptet DES.DES: " + new String(enc));
 
             //Decryption block
             byte[] dec = DES.decrypt(enc, k.getBytes());
-            System.out.println("Text decryptet DES: " + new String(dec));
+            System.out.println("Text decryptet DES.DES: " + new String(dec));
 
         }catch (Exception e){
             e.printStackTrace();

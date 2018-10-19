@@ -1,4 +1,4 @@
-
+package DES;
 
 public class DES {
     // initial permuation table //64 elements
